@@ -4,6 +4,13 @@ Rails application to management BotKenpo.
 
 ## Configuration
 
+> .env
+
+```
+RACK_ENV=development
+PORT=3000
+```
+
 ## Database creation
 
 Create Postgre database for development use.
@@ -17,6 +24,6 @@ GRANT ALL PRIVILEGES ON DATABASE bot_kenpo_development TO bot_kenpo;
 ## How to run the development server
 
 ```sh
-$ bundle exec rails s
+$ bundle exec foreman start
 ```
 
