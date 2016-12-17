@@ -1,24 +1,22 @@
-# README
+# BotKenpoAdmin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails application to management BotKenpo.
 
-Things you may want to cover:
+## Configuration
 
-* Ruby version
+## Database creation
 
-* System dependencies
+Create Postgre database for development use.
 
-* Configuration
+```sql
+CREATE USER bot_kenpo with encrypted password 'bot_kenpo';
+CREATE DATABASE bot_kenpo_development;
+GRANT ALL PRIVILEGES ON DATABASE bot_kenpo_development TO bot_kenpo;
+```
 
-* Database creation
+## How to run the development server
 
-* Database initialization
+```sh
+$ bundle exec rails s
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
